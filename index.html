@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colisión de objetos canvas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to top, #87cefa, #ffffff); /* Degradado cielo */
+        }
+        #mouseCoordinates {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+            z-index: 10; /* Para asegurar que esté encima del canvas */
+        }
+        canvas {
+            display: block;
+            border: 2px solid #000; /* Añadir un borde para resaltar el canvas */
+        }
+    </style>
+</head>
+<body>
+    <div id="mouseCoordinates">X: 0 Y: 0</div>
+    <canvas id="canvas"></canvas>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Your JavaScript -->
+    <script src="main2.js"></script>
+</body>
+</html>
